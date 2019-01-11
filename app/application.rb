@@ -1,7 +1,7 @@
 class Application
   def call(env)
     resp = Rack::Response.new
-    hour = Time.new.hour
+    hour = Time.now.hour
     
     puts "hour is #{hour}"
     if hour >= 12
