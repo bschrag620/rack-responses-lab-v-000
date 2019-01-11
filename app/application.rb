@@ -4,7 +4,7 @@ class Application
     hour = Time.new.hour
     
     puts "hour is #{hour}"
-    if hour >= 12
+    if hour
       resp.write "Good Afternoon!"
     else
       resp.write "Good Morning!"
